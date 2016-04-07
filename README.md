@@ -1,22 +1,22 @@
 # Optimizar Laravel
 Pasos para optimizar Laravel
 
-# Install application dependencies, such as the Laravel framework itself.
-#
-# If you run composer update in development and commit the `composer.lock`
-# file to your repository, then `composer install` will install the exact
-# same versions in production.
+//Install application dependencies, such as the Laravel framework itself.
 
-composer install --no-interaction
+//If you run composer update in development and commit the `composer.lock`
+//file to your repository, then `composer install` will install the exact
+//same versions in production.
 
-# Clear the old boostrap/cache/compiled.php
+[code]composer install --no-interaction[/code]
 
-php artisan clear-compiled
+//Clear the old boostrap/cache/compiled.php
 
-# Recreate boostrap/cache/compiled.php
+[code]php artisan clear-compiled[/code]
 
-php artisan optimize
+//Recreate boostrap/cache/compiled.php
 
-# Migrate any database changes
+[code]php artisan optimize[/code]
 
-php artisan migrate
+//Migrate any database changes
+
+[code]php artisan migrate[/code]
