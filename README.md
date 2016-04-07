@@ -7,16 +7,23 @@ Pasos para optimizar Laravel
 //file to your repository, then `composer install` will install the exact
 //same versions in production.
 
-[code]composer install --no-interaction[/code]
+```
+  composer install --no-interaction[/code]
+```
+Clear the old boostrap/cache/compiled.php
 
-//Clear the old boostrap/cache/compiled.php
+```
+  php artisan clear-compiled[/code]
+```
 
-[code]php artisan clear-compiled[/code]
+Recreate boostrap/cache/compiled.php
 
-//Recreate boostrap/cache/compiled.php
+```
+  php artisan optimize
+```
 
-[code]php artisan optimize[/code]
+Migrate any database changes
 
-//Migrate any database changes
-
-[code]php artisan migrate[/code]
+```
+  php artisan migrate
+```
