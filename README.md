@@ -8,12 +8,12 @@ file to your repository, then `composer install` will install the exact
 same versions in production.
 
 ```
-  composer install --no-interaction[/code]
+  composer install --no-interaction
 ```
 Clear the old boostrap/cache/compiled.php
 
 ```
-  php artisan clear-compiled[/code]
+  php artisan clear-compiled
 ```
 
 Recreate boostrap/cache/compiled.php
